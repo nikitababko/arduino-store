@@ -1,0 +1,93 @@
+.about-us {
+    li {
+        margin: 1rem 4rem 0;
+
+        list-style: disc;
+    }
+}
+
+.subsection-about-us-one {
+    .section__title {
+        margin-bottom: 2rem;
+    }
+}
+
+.subsection-about-us-two {
+    margin-top: 3rem;
+}
+
+.section__subtitle {
+    text-align: center;
+}
+
+.we-help {
+    position: relative;
+    display: block;
+    margin-top: 2rem;
+
+    p {
+        padding: 12px 0 0 2rem;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            content: "";
+            height: 40px;
+            width: 3px;
+            background-color: #000;
+        }
+    }
+}
+
+.about-us__inner {
+    margin-top: 4rem;
+}
+
+.about-us__item {
+    display: flex;
+}
+
+.about-us__item {
+    div {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0 1rem 2rem;
+        p {
+            margin: 2rem 0;
+        }
+        a {
+            width: 140px;
+            padding: 1rem;
+            border: 2px solid #000;
+
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}
+
+.about-us__item--supp {
+    img {
+        width: 300px;
+    }
+}
+
+.about-us {
+    h3 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.why-me {
+    margin-top: 10rem;
+    h3 {
+        margin-top: 4rem;
+    }
+}
+
+.why-me__inner {
+    display: flex;
+}

@@ -1,0 +1,66 @@
+@media (max-width: $laptor) {
+    .header__nav {
+        display: none;
+    }
+
+    .header__nav--active {
+        display: block;
+    }
+
+    .burger-btn {
+        position: absolute;
+        top: 46%;
+        right: 10px;
+        padding: 8px;
+        cursor: pointer;
+
+        display: block;
+    }
+
+    .burger-btn__menu {
+        display: block;
+        position: relative;
+        width: 50px;
+        height: 6px;
+        background: #fed136;
+        &::before {
+            position: absolute;
+            left: 0;
+            top: -15px;
+            display: block;
+            content: "";
+            width: 50px;
+            height: 5px;
+            background: #fed136;
+            transition: transform 0.3s linear;
+        }
+        &::after {
+            position: absolute;
+            left: 0;
+            top: 15px;
+            display: block;
+            content: "";
+            width: 50px;
+            height: 5px;
+            background: #fed136;
+            transition: transform 0.3s linear;
+        }
+    }
+
+    .burger-btn__menu--active {
+        position: relative;
+        width: 50px;
+        height: 5px;
+        background: transparent;
+
+        &::before {
+            transform-origin: left top;
+            transform: rotate(45deg) translate3d(0px, -2px, 0);
+        }
+
+        &::after {
+            transform-origin: left bottom;
+            transform: rotate(-45deg) translate3d(0px, 3px, 0);
+        }
+    }
+}

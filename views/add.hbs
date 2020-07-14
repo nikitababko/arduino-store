@@ -1,0 +1,64 @@
+<div class="container">
+    <form action="/add" method="post">
+        <div class="input-field col s6">
+            <input class="validate" id="title" name="title" required type="text">
+            <label for="title">Название товара</label>
+            <span class="helper-text" data-error="Введите название" data-success="right"></span>
+        </div>
+
+        <div class="input-field col s6">
+            <input class="validate" id="price" min="1" name="price" required type="number">
+            <label for="price">Цена товара</label>
+            <span class="helper-text" data-error="wrong" data-success="right"></span>
+        </div>
+
+        <div class="input-field col s6">
+            <input class="validate" id="img" name="img" required type="text">
+            <label for="img">URL img</label>
+            <span class="helper-text" data-error="wrong" data-success="right"></span>
+        </div>
+
+        <div class="input-field col s6">
+            <input class="validate" id="product3d" name="product3d" required type="text">
+            <label for="product3d"> 3D товар</label>
+            <span class="helper-text" data-error="wrong" data-success="right"></span>
+        </div>
+
+        <input class="validate" type="text" name="intro" placeholder="intro">
+        <input type="text" name="text_one" placeholder="text-one">
+        <input type="text" name="img_one" placeholder="img-one">
+        <input type="text" name="text_two" placeholder="text-two">
+        <input type="text" name="img_two" placeholder="img-two">
+        <input type="text" name="text_three" placeholder="text-three">
+        <input type="text" name="subtitle_one" placeholder="subtitle-one">
+        <input type="text" name="text_four" placeholder="text-four">
+        <input type="text" name="img_three" placeholder="img-three">
+        <input type="text" name="text_five" placeholder="text-five">
+        <input type="text" name="subtitle_two" placeholder="subtitle-two">
+        <input type="text" name="text_six" placeholder="text-six">
+        <input type="text" name="img_four" placeholder="img-four">
+        <input type="text" name="subtitle_three" placeholder="subtitle-three">
+        <input type="text" name="text_seven" placeholder="text-seven">
+        <input type="text" name="img_five" placeholder="img-five">
+        <input type="text" name="subtitle_four" placeholder="subtitle-four">
+        <input type="text" name="text_eight" placeholder="text-eight">
+        <input type="text" name="subtitle_five" placeholder="subtitle-five">
+        <input type="text" name="text_nine" placeholder="text-nine">
+        <input type="text" name="subtitle_six" placeholder="subtitle-six">
+        <input type="text" name="text_ten" placeholder="text-ten">
+        <input type="text" name="img_six" placeholder="img-six">
+        <input type="text" name="text_eleven" placeholder="text-eleven">
+        <input type="text" name="img_seven" placeholder="img-seven">
+        <input type="text" name="text_twelve" placeholder="text-twelve">
+        <input type="text" name="img_eight" placeholder="img-eight">
+        <input type="text" name="text_thirteen" placeholder="text-thirteen">
+
+
+        {{!------------------ инпут для защиты --------------}}
+        <input type="hidden" name="_csrf" value="{{csrf}}">
+        {{!--------------------------------------------------}}
+
+
+        <button class="btn btn-primery">Добавить</button>
+    </form>
+</div>

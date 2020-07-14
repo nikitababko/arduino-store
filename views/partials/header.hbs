@@ -1,0 +1,129 @@
+<header class="header">
+    <div class="container container--header">
+        <div class="headed-logo">
+            <img src="img/header/logo.jpg" alt="">
+        </div>
+
+        <!-- Burger button -->
+        <div class="burger-btn">
+            <span class="burger-btn__menu"></span>
+        </div>
+
+        <nav class="header__nav">
+
+            <a class="header__nav-title" href="/">Mechatronics</a>
+            <ul>
+                {{#if isHome}}
+                <li class="active">
+                    <a class="header__link" href="/">Главная</a>
+                </li>
+                {{else}}
+                <li>
+                    <a class="header__link" href="/">Главная</a>
+                </li>
+                {{/if}}
+
+
+                {{#if isProducts}}
+                <li class="active">
+                    <a class="header__link" href="/products">Товары</a>
+                </li>
+                {{else}}
+                <li>
+                    <a class="header__link" href="/products">Товары</a>
+                </li>
+                {{/if}}
+
+
+
+
+                {{#if isDelivery}}
+                <li class="active">
+                    <a class="header__link" href="/delivery">Доставка</a>
+                </li>
+                {{else}}
+                <li>
+                    <a class="header__link" href="/delivery">Доставка</a>
+                </li>
+                {{/if}}
+
+
+                {{#if isAboutUs}}
+                <li class="active">
+                    <a class="header__link" href="/about-us">О нас</a>
+                </li>
+                {{else}}
+                <li>
+                    <a class="header__link" href="/about-us">О нас</a>
+                </li>
+                {{/if}}
+
+
+                {{!-- Если мы вошли, как пользователь, то нам доступно следующее --}}
+                {{#if isAuth}}
+                {{#if isAdd}}
+                <li class="active">
+                    <a class="header__link" href="/add">Добавить товар</a>
+                </li>
+
+                {{else}}
+                <li>
+                    <a class="header__link" href="/add">Добавить товар</a>
+                </li>
+                {{/if}}
+
+
+                {{#if isProfile}}
+                <li class="active">
+                    <a class="header__link" href="/profile">Профиль</a>
+                </li>
+
+                {{else}}
+                <li>
+                    <a class="header__link" href="/profile">Профиль</a>
+                </li>
+                {{/if}}
+
+
+                {{#if isCard}}
+                <li class="active">
+                    <a class="header__link" href="/card">Корзина</a>
+                </li>
+
+                {{else}}
+                <li>
+                    <a class="header__link" href="/card">Корзина</a>
+                </li>
+                {{/if}}
+
+                {{#if isOrders}}
+                <li class="active">
+                    <a class="header__link" href="/orders">Заказы</a>
+                </li>
+
+                {{else}}
+                <li>
+                    <a class="header__link" href="/orders">Заказы</a>
+                </li>
+                {{/if}}
+                <li>
+                    <a class="header__link" href="/auth/logout">Выйти</a>
+                </li>
+                {{else}}
+                {{#if isLogin}}
+                <li class="active">
+                    <a class="header__link" href="/auth/login">Личный кабинет</a>
+                </li>
+
+                {{else}}
+                <li>
+                    <a class="header__link" href="/auth/login">Личный кабинет</a>
+                </li>
+                {{/if}}
+
+                {{/if}}
+            </ul>
+
+        </nav>
+    </div>
+</header>

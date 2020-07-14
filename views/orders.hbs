@@ -1,0 +1,45 @@
+<div class="container">
+    <h2>Мои заказы</h2>
+    {{#if orders.length}}
+    {{#each orders}}
+
+    <div class="cards card--orders">
+        <div class="card-content">
+            <div class="card-title">
+                <span class="oreders__name">Заказ №</span> {{_id}}
+            </div>
+
+            <div class="orders-date">
+                <span class="oreders__name">Дата заказа: <span class="date">{{date}}</span></span>
+            </div>
+
+            <div>
+                <span class="oreders__name">
+                    Имя/Email:
+                </span>
+                {{user.userId.name}} ({{user.userId.email}})
+            </div>
+
+            <div>
+                <p class="oreders__name">Количество/что заказал:</p>
+                <ol>
+                    {{#each products}}
+                    <li>
+                        {{product.title}} (x<strong>{{count}}</strong>)
+                    </li>
+                    {{/each}}
+                </ol>
+            </div>
+
+
+            <hr>
+
+            <span class="oreders__name">Общая стоимость: <span class="price">{{price}}</span></span>
+        </div>
+    </div>
+
+    {{/each}}
+    {{else}}
+    <p>Заказов пока нет</p>
+    {{/if}}
+</div>

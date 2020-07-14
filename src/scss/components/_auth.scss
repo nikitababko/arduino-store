@@ -1,0 +1,41 @@
+.nav-link {
+    color: rgb(197, 89, 26);
+
+    &:hover {
+        color: rgb(197, 89, 26);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(197, 89, 26);
+    color: #fff;
+    transition: all 0.4s linear;
+
+    &:hover {
+        background-color: #000;
+        color: rgb(197, 89, 26);
+    }
+}
+
+.reset-pass {
+    margin: 30px 0;
+    a {
+        color: red;
+    }
+}
+
+.btn-person {
+    margin-top: 30px;
+}

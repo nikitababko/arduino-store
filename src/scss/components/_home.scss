@@ -1,0 +1,121 @@
+.carousel-inner {
+    max-height: 50vh;
+}
+
+.carousel-indicators {
+    margin-bottom: 100px;
+
+    .active {
+        background-color: #fed136;
+    }
+}
+
+.indicators-circle {
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.carousel-caption {
+    margin-bottom: 300px;
+    padding-left: 50px;
+    width: 700px;
+    height: 300px;
+    text-align: left;
+    background-color: grey;
+    opacity: 0.7;
+
+    h5 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 60px;
+    }
+}
+
+.know-more {
+    margin-top: 15px;
+    padding: 20px 40px;
+    font-size: 25px;
+    color: #cccdd0;
+    background: transparent;
+    border: 3px solid yellow;
+}
+
+.bootstrap-content {
+    margin-left: 100px;
+    text-align: left;
+}
+
+.bootstrap-title {
+    font-size: 50px;
+}
+
+.bootstrap-good {
+    font-size: 70px;
+}
+
+.bootstrap-know {
+    padding: 20px 0;
+    width: 250px;
+    text-align: center;
+    border: 3px solid yellow;
+    font-size: 30px;
+}
+
+.bootstrap-us {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    display: flex;
+
+    color: #fff;
+    background: grey;
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+.bootstrap-us__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 40px 0;
+
+    text-align: center;
+    .fas,
+    .far {
+        color: yellow;
+        font-size: 40px;
+    }
+}
+
+.carousel-control-prev {
+    background-color: #fed136;
+    opacity: 0.7;
+    height: 150px;
+    width: 150px;
+    margin: auto 0;
+    border-radius: 50%;
+}
+
+.carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+    color: #000;
+}
+
+.carousel-control-next {
+    background-color: #fed136;
+    opacity: 0.7;
+    height: 150px;
+    width: 150px;
+    margin: auto 0;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon {
+    width: 50px;
+    height: 50px;
+}

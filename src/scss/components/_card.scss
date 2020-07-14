@@ -1,0 +1,27 @@
+#card {
+    tr,
+    td,
+    th {
+        padding: 10px;
+        text-align: center;
+        border: 2px solid #000;
+    }
+}
+
+.card__price {
+    padding: 20px 0;
+}
+
+.card__btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(197, 89, 26);
+    color: #fff;
+    transition: all 0.4s linear;
+
+    &:hover {
+        background-color: #000;
+        color: rgb(197, 89, 26);
+    }
+}

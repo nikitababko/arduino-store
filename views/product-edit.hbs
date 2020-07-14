@@ -1,0 +1,81 @@
+<div class="container">
+    <h2>Изменить {{product.title}}</h2>
+    <form action="/products/edit" method="post" class="course-form">
+        <div class="input-field col s6">
+            <input class="validate" id="title" name="title" required value="{{product.title}}" type="text">
+            <label for="first_name">Название</label>
+            <span class="helper-text" data-error="wrong" data-success="right"></span>
+        </div>
+
+        <div class="input-field col s6">
+            <input class="validate" id="price" min="1" name="price" required value="{{product.price}}" type="number">
+            <label for="first_name">Цена</label>
+            <span class="helper-text" data-error="wrong" data-success="right"></span>
+        </div>
+
+        <div class="input-field col s6">
+            <input class="validate" id="img" name="img" required value="{{product.img}}" type="text">
+            <label for="first_name">URL img</label>
+            <span class="helper-text" data-error="wrong" data-success="right"></span>
+        </div>
+
+        <div class="input-field col s6">
+            <input class="validate" id="product3d" name="product3d" required value="{{product.product3d}}" type="text">
+            <label for="first_name">3D товар</label>
+            <span class="helper-text" data-error="wrong" data-success="right"></span>
+        </div>
+
+        <input class="validate" type="text" name="intro" placeholder="intro" value="{{product.intro}}">
+        <input type="text" name="text_one" placeholder="text-one" value="{{product.text_one}}">
+        <input type="text" name="img_one" placeholder="img-one" value="{{product.img_one}}">
+        <input type="text" name="text_two" placeholder="text-two" value="{{product.text_two}}">
+        <input type="text" name="img_two" placeholder="img-two" value="{{product.img_two}}">
+        <input type="text" name="text_three" placeholder="text-three" value="{{product.text_three}}">
+        <input type="text" name="subtitle_one" placeholder="subtitle-one" value="{{product.subtitle_one}}">
+        <input type="text" name="text_four" placeholder="text-four" value="{{product.text_four}}">
+        <input type="text" name="img_three" placeholder="img-three" value="{{product.img_three}}">
+        <input type="text" name="text_five" placeholder="text-five" value="{{product.text_five}}">
+        <input type="text" name="subtitle_two" placeholder="subtitle-two" value="{{product.subtitle_two}}">
+        <input type="text" name="text_six" placeholder="text-six" value="{{product.text_six}}">
+        <input type="text" name="img_four" placeholder="img-four" value="{{product.img_four}}">
+        <input type="text" name="subtitle_three" placeholder="subtitle-three" value="{{product.subtitle_three}}">
+        <input type="text" name="text_seven" placeholder="text-seven" value="{{product.text_seven}}">
+        <input type="text" name="img_five" placeholder="img-five" value="{{product.img_five}}">
+        <input type="text" name="subtitle_four" placeholder="subtitle-four" value="{{product.subtitle_four}}">
+        <input type="text" name="text_eight" placeholder="text-eight" value="{{product.text_eight}}">
+        <input type="text" name="subtitle_five" placeholder="subtitle-five" value="{{product.subtitle_five}}">
+        <input type="text" name="text_nine" placeholder="text-nine" value="{{product.text_nine}}">
+        <input type="text" name="subtitle_six" placeholder="subtitle-six" value="{{product.subtitle_six}}">
+        <input type="text" name="text_ten" placeholder="text-ten" value="{{product.text_ten}}">
+        <input type="text" name="img_six" placeholder="img-six" value="{{product.img_six}}">
+        <input type="text" name="text_eleven" placeholder="text-eleven" value="{{product.text_eleven}}">
+        <input type="text" name="img_seven" placeholder="img-seven" value="{{product.img_seven}}">
+        <input type="text" name="text_twelve" placeholder="text-twelve" value="{{product.text_twelve}}">
+        <input type="text" name="img_eight" placeholder="img-eight" value="{{product.img_eight}}">
+        <input type="text" name="text_thirteen" placeholder="text-thirteen" value="{{product.text_thirteen}}">
+
+        <input type="hidden" name="id" value="{{product.id}}">
+
+
+        {{!------------------ инпут для защиты --------------}}
+        <input type="hidden" name="_csrf" value="{{csrf}}">
+        {{!--------------------------------------------------}}
+
+
+        <button type="submit" class="btn btn-primery">Редактировать</button>
+    </form>
+
+    <form action="/products/remove" method="POST">
+
+
+        {{!------------------ инпут для защиты --------------}}
+        <input type="hidden" name="_csrf" value="{{csrf}}">
+        {{!--------------------------------------------------}}
+
+
+        <input type="hidden" name="id" value="{{product.id}}">
+
+        <button class="btn red">Удалить</button>
+
+    </form>
+</div>

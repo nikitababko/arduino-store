@@ -1,0 +1,58 @@
+<section class="products">
+    <div class="container">
+        <div class="products__inner">
+            {{#if products.length}}
+            {{#each products}}
+            <div class="cards">
+                <div class="card__image">
+                    <img src="{{img}}" alt="{{title}}">
+                </div>
+                <div class="card__content">
+                    <span class="card__title">{{title}}</span>
+                    <span class="price">{{price}}</span>
+                </div>
+                <div class="card__action">
+                    <a href="/products/{{id}}" target="_blank">Подробнее</a>
+                    {{#if @root.isAuth}}
+                    <a href="/products/{{id}}/edit?allow=true">Редактировать</a>
+                    {{!-- Form "Pay product" --}}
+                    <form action="/card/add" method="post">
+                        {{!------------------ инпут для защиты --------------}}
+                        <input type="hidden" name="_csrf" value="{{@root.csrf}}">
+                        {{!--------------------------------------------------}}
+                        <input type="hidden" name="id" value="{{id}}">
+                        <button class="products__btn">Купить</button>
+                    </form>
+                    {{!-- </Form "Pay product"> --}}
+                    {{/if}}
+                </div>
+                {{!-- Form "Add review" --}}
+                <div class="products__add-review">
+                    <form action="/" method="post">
+                        <input type="text" name="text" placeholder="Оставьте отзыв">
+                        {{!------------------ инпут для защиты --------------}}
+                        <input type="hidden" name="_csrf" value="{{@root.csrf}}">
+                        {{!--------------------------------------------------}}
+                        <input type="hidden" name="id" value="{{id}}">
+                        <input type="hidden" name="id" value="{{product.id}}">
+                        <button class="products__btn">Добавить отзыв</button>
+                    </form>
+                </div>
+                {{!-- </Form "Add review"> --}}
+            </div>
+            {{!-- </Add review> --}}
+            {{/each}}
+            {{!-- Отзывы --}}
+            {{#if review.length}}
+            {{#each review}}
+            <h1>{{text}}</h1>
+            {{/each}}
+            {{/if}}
+            {{!-- </Отзывы> --}}
+            {{!-- Если  нету, то вывести на страницу "Ничего нету" --}}
+            {{else}}
+            <p>Ничего нету</p>
+            {{/if}}
+        </div>
+    </div>
+</section>

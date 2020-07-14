@@ -1,0 +1,45 @@
+<div class="container">
+    <h2>Корзина</h2>
+    <div id="card">
+        {{#if products.length}}
+        <table>
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Количество</th>
+                    <th>Удалить?</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each products}}
+                <tr>
+                    <td>{{title}}</td>
+                    <td>{{count}}</td>
+                    <td>
+                        <button class="card__btn js-remove" data-id="{{_id}}" data-csrf="{{@root.csrf}}">Удалить</button>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+
+        <p class="card__price"><strong>Price: </strong><span class="price">{{price}}</span></p>
+
+        <form action="/orders" method="post">
+
+
+            {{!------------------ инпут для защиты --------------}}
+            <input type="hidden" name="_csrf" value="{{csrf}}">
+            {{!--------------------------------------------------}}
+
+
+            <button type="submit" class="card__btn">Сделать заказ</button>
+        </form>
+
+        {{else}}
+
+        <h2>Корзина пустая</h2>
+
+        {{/if}}
+    </div>
+</div>

@@ -1,0 +1,105 @@
+/*=======================================
+Reset styles
+=======================================*/
+@import "./utils/reset.scss";
+
+/* "courses.hbs" */
+
+.course-form {
+    margin-bottom: 2rem;
+}
+
+/* Auth */
+.auth {
+    padding-top: 5rem;
+}
+
+/* Сообщение о неправильности ввода данных */
+.alert {
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+
+    text-align: center;
+
+    background-color: rgba(255, 0, 0, 0.3);
+    color: red;
+
+    border-radius: 10px;
+}
+
+/*=======================================
+General styles
+=======================================*/
+.container {
+    margin: 6rem auto;
+    padding: 0 25px;
+    max-width: 1200px;
+}
+
+section {
+    font-family: "Montserrat", sans-serif;
+}
+
+.section__title {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 3rem 0;
+
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+h4 {
+    margin: 3rem 0 2rem;
+
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*=======================================
+variables
+=======================================*/
+@import "./utils/variables.scss";
+
+/*=======================================
+Import components
+=======================================*/
+@import "./components/_header.scss";
+@import "./components/_home.scss";
+@import "./components/_auth.scss";
+@import "./components/_products.scss";
+@import "./components/_card.scss";
+@import "./components/_orders.scss";
+@import "./components/_product.scss";
+@import "./components/_delivery.scss";
+@import "./components/_pay.scss";
+@import "./components/_about-us.scss";
+@import "./components/_registr.scss";
+@import "./components/_discounts.scss";
+@import "./components/_services.scss";
+@import "./components/_footer.scss";
+
+/*=======================================
+Import media
+=======================================*/
+@import "./media/media-header";
+
+/*=======================================
+Import fonts
+=======================================*/
+@font-face {
+    font-family: "Neo Latina";
+    src: local("Neo Latina"), local("Neo-Latina"),
+        url("/fonts/neo-latina/neo-latina.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: wrap;
+}

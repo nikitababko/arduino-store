@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"arduino.orders"}],"uuid":"37cae2dcf1e649b88f98bfd7c746cc10"}

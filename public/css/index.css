@@ -530,10 +530,11 @@ Import components
         color: #000; }
 
 .carousel-inner {
+  position: relative;
   max-height: 50vh; }
 
 .carousel-indicators {
-  margin-bottom: 100px; }
+  position: absolute; }
   .carousel-indicators .active {
     background-color: #fed136; }
 
@@ -542,7 +543,8 @@ Import components
   border-radius: 50%; }
 
 .carousel-caption {
-  margin-bottom: 300px;
+  position: absolute;
+  top: 20%;
   padding-left: 50px;
   width: 700px;
   height: 300px;
@@ -614,7 +616,7 @@ Import components
   opacity: 0.7;
   height: 150px;
   width: 150px;
-  margin: auto 0;
+  margin: auto auto auto 25px;
   border-radius: 50%; }
 
 .carousel-control-next-icon {
@@ -627,7 +629,7 @@ Import components
   opacity: 0.7;
   height: 150px;
   width: 150px;
-  margin: auto 0;
+  margin: auto 25px auto auto;
   border-radius: 50%; }
 
 .carousel-control-prev-icon {

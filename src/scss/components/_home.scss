@@ -1,9 +1,11 @@
 .carousel-inner {
+    position: relative;
     max-height: 50vh;
 }
 
 .carousel-indicators {
-    margin-bottom: 100px;
+    position: absolute;
+    // margin-bottom: 100px;
 
     .active {
         background-color: #fed136;
@@ -16,7 +18,8 @@
 }
 
 .carousel-caption {
-    margin-bottom: 300px;
+    position: absolute;
+    top: 20%;
     padding-left: 50px;
     width: 700px;
     height: 300px;
@@ -96,7 +99,7 @@
     opacity: 0.7;
     height: 150px;
     width: 150px;
-    margin: auto 0;
+    margin: auto auto auto 25px;
     border-radius: 50%;
 }
 
@@ -111,7 +114,7 @@
     opacity: 0.7;
     height: 150px;
     width: 150px;
-    margin: auto 0;
+    margin: auto 25px auto auto;
     border-radius: 50%;
 }
 

@@ -4,8 +4,7 @@
 
 It's online shop for selling arduino components
 
-<img src="./public/img/readme/home_1.png" />
-<img src="./public/img/readme/home_2.png" />
+<img src="./public/img/readme/main-with-auth.jpg" />
 
 ### Where and what is located (files, folders).
 

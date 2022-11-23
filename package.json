@@ -16,7 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "connect-flash": "^0.1.1",
     "connect-mongodb-session": "^2.3.1",
     "csurf": "^1.11.0",
